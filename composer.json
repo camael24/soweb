@@ -1,0 +1,14 @@
+{
+    "repositories": [
+        {
+            "url": "http://github.com/camael24/php-markdown",
+            "type": "vcs"
+        }
+    ],
+    "name": "sohoa/sohoa",
+    "require": {
+        "sohoa/framework": "dev-master",
+        "michelf/php-markdown": "dev-lib"
+    },
+    "minimum-stability": "dev"
+}
