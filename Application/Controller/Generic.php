@@ -31,19 +31,22 @@ namespace Application\Controller {
                 if ($file->getFilename() !== 'index.md') {
                     $categorie = str_replace($directory, '', $file->getPath());
                     $id        = substr($file->getFilename(), 0, strpos($file->getFilename(), '.'));
+                    $filename  = $file->getFilename();
 
-                    $description                  = substr($file->getFilename(), strpos($file->getFilename(), '.') + 1);
-                    $description                  = substr($description, 0, strrpos($description, '.'));
-                    $list[$categorie . '/' . $id] = array(
-                        'id'          => $categorie,
-                        'data'        => $id,
-                        'categorie'   => ucwords(str_replace('-', ' ', $categorie)),
-                        'idCategorie' => $categorie,
-                        'idFile'      => $id,
-                        'file'        => ucfirst(str_replace('-', ' ', $id)),
-                        'label'       => ucfirst(str_replace('-', ' ', $description)),
-                        'raw'         => $file->getPathname()
-                    );
+                    if ($filename[0] !== '_') {
+                        $description                  = substr($file->getFilename(), strpos($file->getFilename(), '.') + 1);
+                        $description                  = substr($description, 0, strrpos($description, '.'));
+                        $list[$categorie . '/' . $id] = array(
+                            'id'          => $categorie,
+                            'data'        => $id,
+                            'categorie'   => ucwords(str_replace('-', ' ', $categorie)),
+                            'idCategorie' => $categorie,
+                            'idFile'      => $id,
+                            'file'        => ucfirst(str_replace('-', ' ', $id)),
+                            'label'       => ucfirst(str_replace('-', ' ', $description)),
+                            'raw'         => $file->getPathname()
+                        );
+                    }
                 }
             }
 

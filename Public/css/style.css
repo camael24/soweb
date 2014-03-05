@@ -13,6 +13,25 @@ body {
     margin           : 0;
     background-color : #ffffff;
 }
+
 h5, .list-group {
-    font-size: 1.5em;
+    font-size : 1.5em;
+}
+
+.dropdown-header {
+    padding          : 0;
+    margin           : 0;
+    display          : inline-block;
+    border-radius    : 5px;
+    background-color : #52575c;
+    color            : #62c462;
+    font-size        : 1em;
+    width            : 100%;
+}
+
+.dropdown-header > a {
+}
+
+.dropdown-menu > li.lambda > a:before {
+    content : "⌦";
 }

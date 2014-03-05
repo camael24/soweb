@@ -30,14 +30,14 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Documentation<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu" aria-labelledby="themes">
-                        <li><a href="<?php echo $this->router->to('indexDoc'); ?>">All the doc</a></li>
+                        <li><a href="<?php echo $this->router->to('indexDoc'); ?>">⚠ All the doc</a></li>
                         <li class="divider"></li>
                         <?php
                         if (isset($list))
                             foreach ($list as $key => $value) {
-                                echo '<li class="dropdown-header">' . $key . '</li>';
+                                echo '<li class="dropdown-header"><a href="' . $this->router->to('showDoc', array('doc_id' => str_replace(' ', '-', strtolower($key)))) . '">→' . ucfirst($key) . '</a></li>';
                                 foreach ($value as $v)
-                                    echo '<li><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'] , 'data' => $v['data'])) . '">' . ucfirst($v['file']) . '</a></li>';
+                                    echo '<li class="lambda"><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'], 'data' => $v['data'])) . '">' . ucfirst($v['file']) . '</a></li>';
 
                             }
 
