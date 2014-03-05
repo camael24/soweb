@@ -24,7 +24,7 @@ if (isset($list))
             echo '<h5>' . $key . '</h5><ul class="list-group">';
 
             foreach ($value as $v)
-                echo '<li class="list-group-item"><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'])) . '">' . ucfirst($v['file']) . '</a> ' . $v['label'] . '</li>';
+                echo '<li class="list-group-item"><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'] , 'data' => $v['data'])) . '">' . ucfirst($v['file']) . '</a> ' . $v['label'] . '</li>';
             echo '</ul>';
         }
     }
