@@ -35,7 +35,8 @@ namespace Application\Controller {
                     $description                  = substr($file->getFilename(), strpos($file->getFilename(), '.') + 1);
                     $description                  = substr($description, 0, strrpos($description, '.'));
                     $list[$categorie . '/' . $id] = array(
-                        'id'          => $categorie . '/' . $id,
+                        'id'          => $categorie,
+                        'data'        => $id,
                         'categorie'   => ucwords(str_replace('-', ' ', $categorie)),
                         'idCategorie' => $categorie,
                         'idFile'      => $id,
@@ -43,7 +44,6 @@ namespace Application\Controller {
                         'label'       => ucfirst(str_replace('-', ' ', $description)),
                         'raw'         => $file->getPathname()
                     );
-
                 }
             }
 

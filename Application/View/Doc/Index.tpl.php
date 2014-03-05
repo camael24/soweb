@@ -1,16 +1,33 @@
 <?php
 
-    $this->inherits('Layout/Base.tpl.php');
-    $this->block('container');
+$this->inherits('Layout/Base.tpl.php');
+$this->block('container');
+/**
+ * @var string $select
+ */
 
-    if(isset($list))
-    	foreach ($list as $key => $value) {
-    		echo '<h5>'.$key.'</h5><ul class="list-group">';
+if (!isset($select))
+    $select = false;
 
-    			foreach ($value as $v)
-	    			echo '<li class="list-group-item"><a href="'.$this->router->to('showDoc' , array('doc_id' => $v['id'])).'">'.ucfirst($v['file']).'</a> '.$v['label'].'</li>';
-    		echo '</ul>';	
-    	}
-    
+$d = function ($key) use ($select) {
+    if (is_string($select)) {
+        return ($select === $key);
+    }
 
-    $this->endBlock();
+    return true;
+};
+
+if (isset($list))
+    foreach ($list as $key => $value) {
+
+        if ($d($key) === true) {
+            echo '<h5>' . $key . '</h5><ul class="list-group">';
+
+            foreach ($value as $v)
+                echo '<li class="list-group-item"><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'])) . '">' . ucfirst($v['file']) . '</a> ' . $v['label'] . '</li>';
+            echo '</ul>';
+        }
+    }
+
+
+$this->endBlock();

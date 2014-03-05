@@ -8,11 +8,9 @@
 // http://domain.com/customController/customAction/
 // http://domain.com/customController/customAction/myParam
 
-$this->setRessource(\Sohoa\Framework\Router::REST_SHOW, null , null  , '/(?<%s>.*)');
+$this->setRessource(\Sohoa\Framework\Router::REST_SHOW, null , null  , '/(?<%s>[^/]+)/(?<data>.*)?');
 $this->resource('doc' , array('only' => array('show' , 'index')));
 
-// Defines the defaults route
-$this->any('/webhook', array('as' => 'webhook', 'to' => 'Main#Webhook'));
 $this->get('/', array('as' => 'root', 'to' => 'Main#index'));
 
 

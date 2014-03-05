@@ -37,7 +37,7 @@
                             foreach ($list as $key => $value) {
                                 echo '<li class="dropdown-header">' . $key . '</li>';
                                 foreach ($value as $v)
-                                    echo '<li><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'])) . '">' . ucfirst($v['file']) . '</a></li>';
+                                    echo '<li><a href="' . $this->router->to('showDoc', array('doc_id' => $v['id'] , 'data' => $v['data'])) . '">' . ucfirst($v['file']) . '</a></li>';
 
                             }
 
