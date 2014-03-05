@@ -9,11 +9,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            padding-top : 60px;
-        }
-    </style>
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,8 +62,7 @@
     <?php $this->block('container');
     $this->endBlock(); ?>
 
-    <div class="footer"
-         style="position: fixed; bottom: 0px; height: 20px; line-height: 20px; width: 100%; padding: 0; margin: 0; background-color: #FFFFFF">
+    <div class="footer">
         <p>&copy; Sohoa Framework</p>
     </div>
 

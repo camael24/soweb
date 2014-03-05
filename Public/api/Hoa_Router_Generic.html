@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sohapi | Hoa/Router/Generic</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+
+    
+
+    <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-home"></i> </a></li>
+        <li><a href="Hoa.html">Hoa </a></li> <li><a href="Hoa_Router.html">Router </a></li> <li class="active"> Generic</li>     </ol>
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+    <div class="col-xs-12 col-sm-9">
+    <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <div class="jumbotron">
+
+        
+        <h2>Abstract: Hoa/Router/Generic</h2>
+
+        
+                    <div>Implements:
+                <div class="list-group">
+                     <a href = "Hoa_Router_Router.html" class="list-group-item"> Hoa\Router\Router</a>                 </div>
+            </div>
+            </div>
+
+    <h4>Properties</h4>
+
+            <div class="panel-group" id="accordion">
+            <a name="p-_rules"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#ap-_rules">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-warning">Protected</span> 
+
+                                <div class="form-control">_rules</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="ap-_rules" class="panel-collapse collapse">
+                    <div class="panel-body">
+                         <pre><code><span style="color: #000000">
+/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;All&nbsp;rules&nbsp;buckets.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@var&nbsp;\Hoa\Router\Generic&nbsp;array<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</code> </pre>                     </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="accordion">
+            <a name="p-_rule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#ap-_rule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-warning">Protected</span> 
+
+                                <div class="form-control">_rule</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="ap-_rule" class="panel-collapse collapse">
+                    <div class="panel-body">
+                         <pre><code><span style="color: #000000">
+/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;The&nbsp;routed&nbsp;rule.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@var&nbsp;\Hoa\Router\Generic&nbsp;array<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</code> </pre>                     </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="accordion">
+            <a name="p-_methods"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#ap-_methods">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-warning">Protected</span>  <span class="input-group-addon label-default">Static</span> 
+
+                                <div class="form-control">_methods</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="ap-_methods" class="panel-collapse collapse">
+                    <div class="panel-body">
+                         <pre><code><span style="color: #000000">
+/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Methods&nbsp;that&nbsp;the&nbsp;router&nbsp;understand.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@var&nbsp;\Hoa\Router\Generic&nbsp;array<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+</code> </pre>                     </div>
+                </div>
+            </div>
+        </div>
+
+    
+    <h4>Methods</h4>
+            <div class="panel-group" id="methods">
+            <a name="m-_addRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-_addRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-warning">Protected</span>  <span class="input-group-addon label-primary">Abstract</span> 
+                                <div
+                                    class="form-control">_addRule ( $visibility, $id,Array $methods, $pattern, $call, $able,Array $variables)</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-_addRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Fallback for add*Rule() methods.
+Router::VISIBILITY_* constants).</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$visibility</code></td><td> int </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Visibility (please, see</td></tr>  <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>  <tr><td><code>$methods</code></td><td> Array </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>HTTP methods allowed by the rule.</td></tr>  <tr><td><code>$pattern</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Pattern (on-subdomain@on-request).</td></tr>  <tr><td><code>$call</code></td><td> mixed </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Call (first part).</td></tr>  <tr><td><code>$able</code></td><td> mixed </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Able (second part).</td></tr>  <tr><td><code>$variables</code></td><td> Array </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Variables (default or additional values).</td></tr>                             </table>
+                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception.html">\Hoa\Router\Exception</a></div><div class="alert alert-success"><strong>Return : </strong><a href="Hoa_Router_Generic.html">\Hoa\Router\Generic</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-addRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-addRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">addRule ( $id,Array $methods, $pattern,[ $call = null],[ $able = null],[Array $variables = ''])</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-addRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Add a public rule.</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>  <tr><td><code>$methods</code></td><td> Array </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>HTTP methods allowed by the rule.</td></tr>  <tr><td><code>$pattern</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Pattern (on-subdomain@on-request).</td></tr>  <tr><td><code>$call</code></td><td> mixed </td><td> <button class="btn btn-default"> no</button> </td><td><code>null </code></td>
+                                    <td>Call (first part).</td></tr>  <tr><td><code>$able</code></td><td> mixed </td><td> <button class="btn btn-default"> no</button> </td><td><code>null </code></td>
+                                    <td>Able (second part).</td></tr>  <tr><td><code>$variables</code></td><td> Array </td><td> <button class="btn btn-default"> no</button> </td><td><code>'' </code></td>
+                                    <td>Variables (default or additional values).</td></tr>                             </table>
+                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception.html">\Hoa\Router\Exception</a></div><div class="alert alert-success"><strong>Return : </strong><a href="Hoa_Router_Generic.html">\Hoa\Router\Generic</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-addPrivateRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-addPrivateRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">addPrivateRule ( $id,Array $methods, $pattern,[ $call = null],[ $able = null],[Array $variables = ''])</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-addPrivateRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Add a private rule.</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>  <tr><td><code>$methods</code></td><td> Array </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>HTTP methods allowed by the rule.</td></tr>  <tr><td><code>$pattern</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Pattern (on-subdomain@on-request).</td></tr>  <tr><td><code>$call</code></td><td> mixed </td><td> <button class="btn btn-default"> no</button> </td><td><code>null </code></td>
+                                    <td>Call (first part).</td></tr>  <tr><td><code>$able</code></td><td> mixed </td><td> <button class="btn btn-default"> no</button> </td><td><code>null </code></td>
+                                    <td>Able (second part).</td></tr>  <tr><td><code>$variables</code></td><td> Array </td><td> <button class="btn btn-default"> no</button> </td><td><code>'' </code></td>
+                                    <td>Variables (default or additional values).</td></tr>                             </table>
+                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception.html">\Hoa\Router\Exception</a></div><div class="alert alert-success"><strong>Return : </strong><a href="Hoa_Router_Generic.html">\Hoa\Router\Generic</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-__call"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-__call">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">__call ( $name, $arguments)</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-__call" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Helper for adding rules.
+Methods are concatenated by _. If prefixed by _, it's a private rule. In
+addition, the keyword “any” takes place for all methods.
+Examples:
+get(…)        : addRule(…, array('get'), …);
+get_post(…)   : addRule(…, array('get', 'post'), …);
+post_get(…)   : same that above;
+_get(…)       : addPrivateRule(…, array('get'), …);
+any(…)        : addRule(…, array(<all methods>), …);
+head_delete(…): addRule(…, array('head', 'delete'), …).</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$name</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Please, see API documentation.</td></tr>  <tr><td><code>$arguments</code></td><td> array </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>Arguments for add*Rule() methods.</td></tr>                             </table>
+                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception.html">\Hoa\Router\Exception</a></div><div class="alert alert-success"><strong>Return : </strong><a href="Hoa_Router_Generic.html">\Hoa\Router\Generic</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-removeRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-removeRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">removeRule ( $id)</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-removeRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Remove a rule.</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>                             </table>
+                        <div class="alert alert-success"><strong>Return : </strong>void</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-ruleExists"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-ruleExists">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">ruleExists ( $id)</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-ruleExists" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Check whether a rule exists.</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>                             </table>
+                        <div class="alert alert-success"><strong>Return : </strong>bool</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-getRules"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-getRules">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">getRules ()</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-getRules" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Get all rules.</p>                        <div class="alert alert-success"><strong>Return : </strong>array</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-getRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-getRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">getRule ( $id)</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-getRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Get a specific rule.</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>                             </table>
+                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception.html">\Hoa\Router\Exception</a></div><div class="alert alert-success"><strong>Return : </strong>array</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-getTheRule"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-getTheRule">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span> 
+                                <div
+                                    class="form-control">getTheRule ()</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-getTheRule" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Get the selected rule after routing.</p>                        <div class="alert alert-success"><strong>Return : </strong>array</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-route"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-route">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span>  <span class="input-group-addon label-primary">Abstract</span> 
+                                <div
+                                    class="form-control">route ()</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-route" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Find the appropriated rule.</p>                        <div class="alert alert-info"><strong>Exception : </strong><a href="Hoa_Router_Exception_NotFound.html">\Hoa\Router\Exception\NotFound</a></div><div class="alert alert-success"><strong>Return : </strong><a href="Hoa_Router.html">\Hoa\Router</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-unroute"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-unroute">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span>  <span class="input-group-addon label-primary">Abstract</span> 
+                                <div
+                                    class="form-control">unroute ( $id,[Array $variables = ''])</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-unroute" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Unroute a rule (i.e. route()^-1).</p>                                                    <table class="table table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Default Value</th>
+                                    <th>Comment</th>
+                                </tr>
+                                 <tr><td><code>$id</code></td><td> string </td><td>  <button class="btn btn-primary"> yes</button> </td><td><code> </code></td>
+                                    <td>ID.</td></tr>  <tr><td><code>$variables</code></td><td> Array </td><td> <button class="btn btn-default"> no</button> </td><td><code>'' </code></td>
+                                    <td>Variables.</td></tr>                             </table>
+                        <div class="alert alert-success"><strong>Return : </strong>string</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-getMethod"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-getMethod">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span>  <span class="input-group-addon label-primary">Abstract</span> 
+                                <div
+                                    class="form-control">getMethod ()</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-getMethod" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Get method or mode where the router is called.</p>                        <div class="alert alert-success"><strong>Return : </strong>string</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel-group" id="methods">
+            <a name="m-isAsynchronous"></a>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#methods"
+                           href="#am-isAsynchronous">
+                            <div class="input-group">
+
+                                 <span class="input-group-addon label-success">Public</span>  <span class="input-group-addon label-primary">Abstract</span> 
+                                <div
+                                    class="form-control">isAsynchronous ()</div>
+                            </div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="am-isAsynchronous" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <p>Whether the router is called asynchronously or not.</p>                        <div class="alert alert-success"><strong>Return : </strong>bool</div>                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    <!--/span-->
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <div class="list-group">
+            <a href="#" class="list-group-item active">Hoa/Router/Generic</a>
+            <li class="list-group-item">Properties</li>
+             <a href = "#p-_rules" class="list-group-item">  <span class="label label-warning">&nbsp;</span> $_rules </a>  <a href = "#p-_rule" class="list-group-item">  <span class="label label-warning">&nbsp;</span> $_rule </a>  <a href = "#p-_methods" class="list-group-item">  <span class="label label-warning">&nbsp;</span> $_methods </a>             <li class="list-group-item">Methods</li>
+             <a href = "#m-_addRule" class="list-group-item">  <span class="label label-warning">&nbsp;</span> _addRule() </a>  <a href = "#m-addRule" class="list-group-item">  <span class="label label-success">&nbsp;</span> addRule() </a>  <a href = "#m-addPrivateRule" class="list-group-item">  <span class="label label-success">&nbsp;</span> addPrivateRule() </a>  <a href = "#m-__call" class="list-group-item">  <span class="label label-success">&nbsp;</span> __call() </a>  <a href = "#m-removeRule" class="list-group-item">  <span class="label label-success">&nbsp;</span> removeRule() </a>  <a href = "#m-ruleExists" class="list-group-item">  <span class="label label-success">&nbsp;</span> ruleExists() </a>  <a href = "#m-getRules" class="list-group-item">  <span class="label label-success">&nbsp;</span> getRules() </a>  <a href = "#m-getRule" class="list-group-item">  <span class="label label-success">&nbsp;</span> getRule() </a>  <a href = "#m-getTheRule" class="list-group-item">  <span class="label label-success">&nbsp;</span> getTheRule() </a>  <a href = "#m-route" class="list-group-item">  <span class="label label-success">&nbsp;</span> route() </a>  <a href = "#m-unroute" class="list-group-item">  <span class="label label-success">&nbsp;</span> unroute() </a>  <a href = "#m-getMethod" class="list-group-item">  <span class="label label-success">&nbsp;</span> getMethod() </a>  <a href = "#m-isAsynchronous" class="list-group-item">  <span class="label label-success">&nbsp;</span> isAsynchronous() </a>         </div>
+    </div>
+    <!--/span-->
+    </div>
+    <!--/row-->
+
+
+    <hr>
+
+    <footer>
+        <p>&copy; Sohapi made by Camael24</p>
+    </footer>
+
+</div>
+<!--/.container-->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/offcanvas.js"></script>
+</body>
+</html>

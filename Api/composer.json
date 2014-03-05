@@ -1,0 +1,46 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "hoa/translate",
+                "version": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/hoaproject/Translate",
+                    "reference": "1528758116b594ea0e2eebe0736b038fff8d7cf1"
+                },
+                "target-dir": "Hoa/Translate",
+                "autoload": {
+                    "psr-0": {
+                        "Hoa\\Translate": "."
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "camael24/sohapi": "master@dev",
+        "php": ">=5.3.0",
+        "hoa/core": "dev-master",
+        "hoa/console": "dev-master",
+        "hoa/http": "dev-master",
+        "hoa/router": "dev-master",
+        "hoa/view": "dev-master",
+        "hoa/dispatcher": "dev-master",
+        "hoa/session": "dev-master",
+        "hoa/file": "dev-master",
+        "hoa/registry": "dev-master",
+        "hoa/stringbuffer": "dev-master",
+        "hoa/xyl": "dev-master",
+        "hoa/translate" : "dev-master"
+
+
+    },
+    "autoload": {
+        "psr-0": {
+            "Sohoa\\Framework": "./framework/Sources/"
+        }
+    },
+    "minimum-stability": "dev"
+}

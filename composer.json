@@ -8,7 +8,7 @@
     "name": "sohoa/sohoa",
     "require": {
         "sohoa/framework": "dev-master",
-        "michelf/php-markdown": "dev-lib"
+        "erusev/parsedown": "dev-master"
     },
     "minimum-stability": "dev"
 }

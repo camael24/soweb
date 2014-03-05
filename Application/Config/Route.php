@@ -2,8 +2,7 @@
 
 /* @var $this \Sohoa\Framework\Router */
 
-// Defines the defaults route
-$this->get('/', array('as' => 'root', 'to' => 'Main#index'));
+
 
 // The following code allows to route uri like
 // http://domain.com/customController/customAction/
@@ -12,6 +11,9 @@ $this->get('/', array('as' => 'root', 'to' => 'Main#index'));
 $this->setRessource(\Sohoa\Framework\Router::REST_SHOW, null , null  , '/(?<%s>.*)');
 $this->resource('doc' , array('only' => array('show' , 'index')));
 
+// Defines the defaults route
+$this->any('/webhook', array('as' => 'webhook', 'to' => 'Main#Webhook'));
+$this->get('/', array('as' => 'root', 'to' => 'Main#index'));
 
 
 /**

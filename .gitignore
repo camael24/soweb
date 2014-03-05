@@ -1,5 +1,7 @@
 .idea/*
 vendor/*
+Api/framework/*
+Api/vendor/*
 composer.lock
 *.sqlite
 *.db

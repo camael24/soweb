@@ -5,7 +5,7 @@ namespace Application\Controller {
     use Hoa\File\Read;
     use Hoa\Router\Exception\NotFound;
     use Sohoa\Framework\Kit;
-    use \Michelf\Markdown;
+
 
     class Doc extends Generic
     {
@@ -24,8 +24,8 @@ namespace Application\Controller {
 
                 $file                = $this->_list[$doc_id];
                 $read                = new Read($file['raw']);
-                $parser              = new Markdown();
-                $this->data->content = $parser->transform($read->readAll());
+                $parser              = new \Parsedown();
+                $this->data->content = $parser->parse($read->readAll());
 
             } else {
                 throw new NotFound('Documentation %s has not found here', 0, array($doc_id));

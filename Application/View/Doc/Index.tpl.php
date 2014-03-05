@@ -5,7 +5,7 @@
 
     if(isset($list))
     	foreach ($list as $key => $value) {
-    		echo '<h5>'.$key.'</h5><ul class="list-group" style="font-size: 1.5em;">';
+    		echo '<h5>'.$key.'</h5><ul class="list-group">';
 
     			foreach ($value as $v)
 	    			echo '<li class="list-group-item"><a href="'.$this->router->to('showDoc' , array('doc_id' => $v['id'])).'">'.ucfirst($v['file']).'</a> '.$v['label'].'</li>';

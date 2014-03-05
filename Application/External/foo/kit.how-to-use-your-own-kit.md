@@ -5,7 +5,6 @@ Sohoa framework
 $foo = 'bar';
 ```
 
-```
-PHP
+```php
 $foo = 'Qux';
 ```
